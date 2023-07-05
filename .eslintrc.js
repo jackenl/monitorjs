@@ -2,11 +2,10 @@ module.exports = {
   root: true,
   extends: [
     'eslint:recommended',
-    'plugin:n/recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier',
   ],
-  plugins: ['import'],
+  plugins: ['@typescript-eslint', 'import'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
