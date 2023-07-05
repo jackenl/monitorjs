@@ -1,17 +1,19 @@
 {
   "name": "monitorjs",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "monitorjs",
+  "author": "jacken",
+  "license": "MIT",
   "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "lint": "eslint --cache .",
     "format": "prettier --write --cache ."
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@commitlint/cli": "^17.6.6",
     "@commitlint/config-conventional": "^17.6.6",
@@ -23,6 +25,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.2.3",
     "prettier": "^2.8.8",
+    "rimraf": "^5.0.1",
     "typescript": "^5.1.6"
   },
   "lint-staged": {

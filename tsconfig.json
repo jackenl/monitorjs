@@ -1,11 +1,16 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "ES5",
     "module": "CommonJS",
     "esModuleInterop": true,
+    "moduleResolution": "Node",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "paths": {
+      "@monitorjs/*": ["packages/*/src"]
+    }
   },
   "include": ["packages"],
   "exclude": ["node_modules"]
