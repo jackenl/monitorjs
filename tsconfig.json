@@ -10,7 +10,8 @@
     "skipLibCheck": true,
     "paths": {
       "@monitorjs/*": ["packages/*/src"]
-    }
+    },
+    "lib": ["ES6", "DOM"]
   },
   "include": ["packages"],
   "exclude": ["node_modules"]

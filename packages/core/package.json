@@ -19,6 +19,7 @@
     "fe monitor"
   ],
   "dependencies": {
-    "@monitorjs/types": "workspace:^"
+    "@monitorjs/types": "workspace:^",
+    "@monitorjs/utils": "workspace:^"
   }
 }

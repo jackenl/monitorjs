@@ -1,1 +1,5 @@
 export * from './baseClient'
+export * from './subscribe'
+export * from './breadcrumb'
+export * from './baseOptions'
+export * from './baseTransport'

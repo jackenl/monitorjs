@@ -46,10 +46,23 @@ importers:
       '@monitorjs/types':
         specifier: workspace:^
         version: link:../types
+      '@monitorjs/utils':
+        specifier: workspace:^
+        version: link:../utils
 
   packages/shared: {}
 
-  packages/types: {}
+  packages/types:
+    dependencies:
+      '@monitorjs/shared':
+        specifier: workspace:^
+        version: link:../shared
+
+  packages/utils:
+    dependencies:
+      '@monitorjs/shared':
+        specifier: workspace:^
+        version: link:../shared
 
 packages:
 
