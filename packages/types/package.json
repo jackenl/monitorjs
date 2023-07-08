@@ -17,5 +17,8 @@
     "monitorjs",
     "monitor",
     "fe monitor"
-  ]
+  ],
+  "dependencies": {
+    "@monitorjs/shared": "workspace:^"
+  }
 }
