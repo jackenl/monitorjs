@@ -1,7 +1,7 @@
 import { BaseOptionsType, BreadcrumbPushData } from '@monitorjs/types'
 import { getTimestamp } from '@monitorjs/utils'
 
-export class Breadcrumb<O extends BaseOptionsType> {
+export class Breadcrumb<O extends BaseOptionsType = BaseOptionsType> {
   private maxBreadcrumbs = 10
   private stack: BreadcrumbPushData[] = []
   constructor(options: Partial<O> = {}) {

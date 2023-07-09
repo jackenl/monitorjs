@@ -12,7 +12,7 @@ export abstract class BaseClient<
   E extends EventTypes = EventTypes,
 > implements BaseClientType
 {
-  private options: BaseOptionsFieldsType
+  options: BaseOptionsFieldsType
   constructor(options: O) {
     this.options = options
     logger.bindOptions(options.debug)

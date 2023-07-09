@@ -6,7 +6,7 @@ export abstract class BaseTransport<
 > implements BaseTransportType
 {
   private readonly queue: Queue
-  constructor() {
+  constructor(options: O) {
     this.queue = new Queue()
   }
 

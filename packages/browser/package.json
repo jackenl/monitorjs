@@ -1,0 +1,27 @@
+{
+  "name": "@monitorjs/browser",
+  "version": "0.0.1",
+  "description": "@monitorjs/browser",
+  "author": "jacken",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rimraf dist && tsc -p tsconfig.json"
+  },
+  "keywords": [
+    "monitorjs",
+    "monitor",
+    "fe monitor"
+  ],
+  "dependencies": {
+    "@monitorjs/core": "workspace:^",
+    "@monitorjs/shared": "workspace:^",
+    "@monitorjs/types": "workspace:^",
+    "@monitorjs/utils": "workspace:^"
+  }
+}

@@ -4,6 +4,9 @@ export class BaseOptions<
   O extends BaseOptionsFieldsType = BaseOptionsFieldsType,
 > implements BaseOptionsType
 {
-  constructor() {}
+  constructor(options: O) {
+    this.bindOptions(options)
+  }
+
   bindOptions(options: O): void {}
 }
